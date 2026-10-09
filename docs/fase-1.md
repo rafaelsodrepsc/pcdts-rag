@@ -36,6 +36,8 @@ Estabelecer um pipeline de recuperação mínimo, de ponta a ponta, e um harness
 
 ### 3. Chunking
 
+**Status:** concluído (`uv run pcdt-chunk`). O corpus gera 2.049 chunks com mediana de 504 tokens, já contando o prefixo `passage: ` e os tokens especiais (máximo de 505, dentro do limite de 512 do modelo). 37% dos chunks ficam numa única página, 54% em duas e 9% em três ou mais. O caso extremo cobre 9 páginas (`dpoc`, páginas 56 a 64), formadas apenas por legendas de gráficos do apêndice de metodologia. Como a relevância é definida pelo intervalo de páginas, chunks largos tornam a métrica mais permissiva; o efeito é considerado na comparação de estratégias de chunking da fase 2.
+
 - Janelas de aproximadamente 500 tokens com sobreposição de 50, contadas pelo tokenizer do modelo de embedding.
 - Cada chunk registra `slug`, `page_start` e `page_end`, que associam o chunk às anotações do golden set (ver ADR 0001).
 - Saída: `data/processed/chunks.jsonl`.
