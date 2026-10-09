@@ -13,6 +13,7 @@ Requer [uv](https://docs.astral.sh/uv/).
 ```bash
 uv sync
 uv run pcdt-download   # PDFs em data/raw/ e sha256 em data/raw/manifest.json
+uv run pcdt-extract    # texto por página em data/processed/pages.jsonl
 uv run pytest
 ```
 
