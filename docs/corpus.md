@@ -33,7 +33,7 @@ Versões publicadas em portaria, verificadas em 2026-10-09.
 
 ## Características conhecidas
 
-- **Apêndices de metodologia.** Vários documentos incluem o apêndice "Metodologia de busca e avaliação da literatura", que pode representar a maior parte do arquivo. Em `dor-cronica`, o conteúdo clínico ocupa as páginas 2 a 51; em `tdah`, as páginas 2 a 20. Esses apêndices são indexados no baseline, e sua remoção é avaliada na fase 2.
+- **Apêndices de metodologia.** Todos os 15 documentos incluem o apêndice "Metodologia de busca e avaliação da literatura". Somados, esses apêndices ocupam 842 das 1.420 páginas do corpus (59%, contagem por página a partir do título do apêndice). Os casos extremos são `tdah` (90%) e `dor-cronica` (83%). Esses apêndices são indexados no baseline, e sua remoção é avaliada na fase 2.
 - **Múltiplos protocolos por arquivo.** `artrite-reumatoide` contém dois protocolos: Artrite Reumatoide (Anexo 1) e Artrite Idiopática Juvenil (Anexo 2).
 - **Versão de `epilepsia`.** A versão disponível é de 2018. Há registro de atualização aprovada em 2025, cujo PDF não estava publicado na data da verificação. Substituto previsto: Esclerose Lateral Amiotrófica (Portaria Conjunta nº 13/2020).
 - **Texto extraível.** Nenhum documento é digitalizado como imagem, então não há etapa de OCR.
