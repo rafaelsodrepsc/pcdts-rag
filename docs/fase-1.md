@@ -24,6 +24,8 @@ Estabelecer um pipeline de recuperação mínimo, de ponta a ponta, e um harness
 
 ### 2. Extração de texto
 
+**Status:** concluído. Observações em [`notas-extracao.md`](notas-extracao.md).
+
 - Extração por página com PyMuPDF, preservando a numeração do PDF.
 - Saída: `data/processed/pages.jsonl`, com registros `{"slug", "page", "text"}`.
 - Remoção de cabeçalhos e rodapés repetidos.

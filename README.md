@@ -37,6 +37,7 @@ cp .env.example .env
 uv sync
 docker compose up -d          # PostgreSQL 17 com pgvector
 uv run pcdt-download          # baixa o corpus para data/raw/
+uv run pcdt-extract           # extrai o texto por página para data/processed/
 uv run pytest
 ```
 
