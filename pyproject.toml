@@ -9,11 +9,13 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "pymupdf>=1.28.2",
+    "tokenizers>=0.23.3",
 ]
 
 [project.scripts]
 pcdt-download = "pcdt_rag.corpus:main"
 pcdt-extract = "pcdt_rag.extract:main"
+pcdt-chunk = "pcdt_rag.chunk:main"
 
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]

@@ -14,6 +14,7 @@ Requer [uv](https://docs.astral.sh/uv/).
 uv sync
 uv run pcdt-download   # PDFs em data/raw/ e sha256 em data/raw/manifest.json
 uv run pcdt-extract    # texto por página em data/processed/pages.jsonl
+uv run pcdt-chunk      # janelas de 500 tokens em data/processed/chunks.jsonl
 uv run pytest
 ```
 
