@@ -1,0 +1,18 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-pcdt}
+      POSTGRES_USER: ${POSTGRES_USER:-pcdt}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pcdt}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-pcdt}"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:

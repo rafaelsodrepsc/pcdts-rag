@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+
+# PDFs são baixados por `uv run pcdt-download`; o manifest é versionado
+data/raw/*.pdf
+data/processed/
+
+evals/runs/
