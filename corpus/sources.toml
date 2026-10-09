@@ -1,0 +1,96 @@
+# PCDTs que compõem o corpus. Fonte oficial: Conitec / Ministério da Saúde.
+# https://www.gov.br/conitec/pt-br/protocolos-clinicos-e-diretrizes-terapeuticas
+#
+# Versões publicadas em portaria (não relatórios de recomendação), verificadas em 2026-10-09.
+# As URLs terminam em /@@download/file porque o gov.br responde as URLs .pdf diretas
+# com uma página HTML e status 200.
+#
+# Os temas estão agrupados de propósito: protocolos do mesmo grupo citam os mesmos
+# medicamentos e competem entre si na busca, o que deixa o problema realista.
+
+# --- Reumatologia e dor: biológicos em comum (adalimumabe, etanercepte, secuquinumabe...)
+
+[[pcdt]]
+slug = "dor-cronica"
+title = "PCDT Dor Crônica (Portaria Conjunta SAES/SAPS/SECTICS nº 1/2024)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/dorcronica-1.pdf/@@download/file"
+
+[[pcdt]]
+slug = "artrite-reumatoide"
+title = "PCDT Artrite Reumatoide e Artrite Idiopática Juvenil (Portaria Conjunta nº 16/2021)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@download/file"
+
+[[pcdt]]
+slug = "artrite-psoriasica"
+title = "PCDT Artrite Psoriásica (Portaria Conjunta nº 37/2026)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica/@@download/file"
+
+[[pcdt]]
+slug = "espondilite-ancilosante"
+title = "PCDT Espondilite Ancilosante (Portaria Conjunta nº 25/2018)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/diretrizes/portaria_conjunta_pcdt_espondilite_ancilosante.pdf/@@download/file"
+
+[[pcdt]]
+slug = "psoriase"
+title = "PCDT Psoríase (Portaria Conjunta nº 18/2021)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf/@@download/file"
+
+# --- Respiratório: broncodilatadores e corticoides inalatórios em comum
+
+[[pcdt]]
+slug = "asma"
+title = "PCDT Asma (Portaria Conjunta SAES/SCTIE nº 43/2026)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/asma-portaria-conjunta-saes-sctie-no-43.pdf/@@download/file"
+
+[[pcdt]]
+slug = "dpoc"
+title = "PCDT Doença Pulmonar Obstrutiva Crônica (Portaria Conjunta nº 19/2021)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/20211123_portal_portaria_conjunta_19_pcdt_dpoc.pdf/@@download/file"
+
+# --- Neurologia
+
+[[pcdt]]
+slug = "doenca-de-parkinson"
+title = "PCDT Doença de Parkinson (Portaria Conjunta SAES/SECTICS nº 16/2025)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-doenca-de-parkinson/@@download/file"
+
+[[pcdt]]
+slug = "doenca-de-alzheimer"
+title = "PCDT Doença de Alzheimer (Portaria Conjunta SAES/SCTIE nº 27/2025)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer/@@download/file"
+
+[[pcdt]]
+slug = "esclerose-multipla"
+title = "PCDT Esclerose Múltipla (Portaria Conjunta nº 1/2022)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/20220201_portal_portaria_conjunta_1_pcdt_esclerose_multipla.pdf/@@download/file"
+
+# Versão de 2018. Há relatos de uma atualização aprovada em 2025, mas o PDF não foi
+# encontrado em 2026-10-09. Reserva, se for substituir: ELA (Portaria Conjunta nº 13/2020).
+[[pcdt]]
+slug = "epilepsia"
+title = "PCDT Epilepsia (Portaria Conjunta nº 17/2018)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_epilepisia_2019.pdf/@@download/file"
+
+# --- Metabólico: DM1 x DM2 confundem bem (insulinas, metformina)
+
+[[pcdt]]
+slug = "diabete-melito-1"
+title = "PCDT Diabete Melito Tipo 1 (Portaria Conjunta nº 17/2019)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/portaria-conjunta-pcdt-diabete-melito-1.pdf/@@download/file"
+
+[[pcdt]]
+slug = "diabete-melito-2"
+title = "PCDT Diabete Melito Tipo 2 (Portaria SCTIE/MS nº 13/2026)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2/@@download/file"
+
+[[pcdt]]
+slug = "dislipidemia"
+title = "PCDT Dislipidemia: prevenção de eventos cardiovasculares e pancreatite (Portaria Conjunta nº 8/2019)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@download/file"
+
+# --- Saúde mental
+
+[[pcdt]]
+slug = "tdah"
+title = "PCDT Transtorno do Déficit de Atenção com Hiperatividade (Portaria Conjunta nº 14/2022)"
+url = "https://www.gov.br/conitec/pt-br/midias/protocolos/20220308_portaria-conjunta-no-14-pcdt-transtorno-do-deficite-de-atencao-com-hiperatividade.pdf/@@download/file"

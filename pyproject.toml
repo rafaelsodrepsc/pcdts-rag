@@ -1,0 +1,32 @@
+[project]
+name = "pcdt-rag"
+version = "0.1.0"
+description = "RAG eval-first sobre os Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) do SUS"
+readme = "README.md"
+authors = [
+    { name = "rafaelsodrepsc", email = "rafaelsodrepsc@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+pcdt-download = "pcdt_rag.corpus:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

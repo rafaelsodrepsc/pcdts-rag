@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "dor-cronica",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/dorcronica-1.pdf/@@download/file",
+    "sha256": "927f96a4969d4d62d37047d7457998db963f21e1adb0763bf951d833ed31609d",
+    "downloaded_at": "2026-10-09T13:13:51.680255+00:00"
+  },
+  {
+    "slug": "artrite-reumatoide",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@download/file",
+    "sha256": "cf0edbd769ced4dc7d376a67f5cec68707499341e4112eeb25cc6e75573d6fa2",
+    "downloaded_at": "2026-10-09T13:13:55.148610+00:00"
+  },
+  {
+    "slug": "artrite-psoriasica",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica/@@download/file",
+    "sha256": "39c903a0c05bd44e12d18a91409ed04882e59af9a051d0e3b0d35d35b2aa7dfd",
+    "downloaded_at": "2026-10-09T13:13:56.792899+00:00"
+  },
+  {
+    "slug": "espondilite-ancilosante",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/diretrizes/portaria_conjunta_pcdt_espondilite_ancilosante.pdf/@@download/file",
+    "sha256": "293bde33859c906f5919d8ff4592e1e4fb8117949469b684f37bdb7b9f02e635",
+    "downloaded_at": "2026-10-09T13:13:58.008110+00:00"
+  },
+  {
+    "slug": "psoriase",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf/@@download/file",
+    "sha256": "364f280ad6c8ddd1d40a223a6238d8b58aa8de90194e29a28b0e8c3bec1f0862",
+    "downloaded_at": "2026-10-09T13:13:59.272238+00:00"
+  },
+  {
+    "slug": "asma",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/asma-portaria-conjunta-saes-sctie-no-43.pdf/@@download/file",
+    "sha256": "0da0567191b63f32a689ee9cc8cc42a009719fb59cc3db52c10bf79f9cc603fb",
+    "downloaded_at": "2026-10-09T13:14:00.902732+00:00"
+  },
+  {
+    "slug": "dpoc",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211123_portal_portaria_conjunta_19_pcdt_dpoc.pdf/@@download/file",
+    "sha256": "4d4a15a6b278e5d1a5da036d816c71493047ac5b3acefaa6d9573ca2b8ec56d8",
+    "downloaded_at": "2026-10-09T13:14:03.260220+00:00"
+  },
+  {
+    "slug": "doenca-de-parkinson",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-doenca-de-parkinson/@@download/file",
+    "sha256": "bd772fa9b21a73fabf7cf7bdcc051f8522524911d397f492835517736b64bf30",
+    "downloaded_at": "2026-10-09T13:14:04.453789+00:00"
+  },
+  {
+    "slug": "doenca-de-alzheimer",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer/@@download/file",
+    "sha256": "b9e1715db3cde150de6996708a9aa41bfc911e690c5514178b345ae2b5f7d31d",
+    "downloaded_at": "2026-10-09T13:14:06.445269+00:00"
+  },
+  {
+    "slug": "esclerose-multipla",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/20220201_portal_portaria_conjunta_1_pcdt_esclerose_multipla.pdf/@@download/file",
+    "sha256": "da2346bd122b4a3698da123b2f783fe5417ba1de4b69f087053840f399114b05",
+    "downloaded_at": "2026-10-09T13:14:19.657937+00:00"
+  },
+  {
+    "slug": "epilepsia",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_epilepisia_2019.pdf/@@download/file",
+    "sha256": "82508a8e047f6f105d66002d326971afb923b0325815da5eda5419126ceb0fc9",
+    "downloaded_at": "2026-10-09T13:14:21.473155+00:00"
+  },
+  {
+    "slug": "diabete-melito-1",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/portaria-conjunta-pcdt-diabete-melito-1.pdf/@@download/file",
+    "sha256": "bd6d270582409cd5a4bea3667970b5d24bb3323f1e3281179eb02b0653e51369",
+    "downloaded_at": "2026-10-09T13:14:23.959930+00:00"
+  },
+  {
+    "slug": "diabete-melito-2",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2/@@download/file",
+    "sha256": "f90b782997a5f90842877c6526432cd382b596ad6cb7ad95da0a2fd776dfae09",
+    "downloaded_at": "2026-10-09T13:14:25.446240+00:00"
+  },
+  {
+    "slug": "dislipidemia",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@download/file",
+    "sha256": "70224304f3a7bc95fb65c36f76ade4b5de181fc216ad9dfbe58439ea3e2945cc",
+    "downloaded_at": "2026-10-09T13:14:26.870620+00:00"
+  },
+  {
+    "slug": "tdah",
+    "url": "https://www.gov.br/conitec/pt-br/midias/protocolos/20220308_portaria-conjunta-no-14-pcdt-transtorno-do-deficite-de-atencao-com-hiperatividade.pdf/@@download/file",
+    "sha256": "cf8b01a7ca401bf4243eb9253d08597f3e6157e80834a7e2925d260c771de60f",
+    "downloaded_at": "2026-10-09T13:14:30.426544+00:00"
+  }
+]
