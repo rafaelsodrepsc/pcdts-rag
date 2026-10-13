@@ -7,6 +7,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
+import sys
+import textwrap
 
 import numpy as np
 
@@ -72,13 +75,23 @@ def main() -> None:
     if args.sem_metodologia:
         allowed = outside_methodology(chunks, corpus_methodology())
     query = Embedder().queries([args.question])
+    width = min(shutil.get_terminal_size().columns, 100)
+    color = sys.stdout.isatty()
     for rank, i in enumerate(search(query, docs, allowed, args.k)[0], start=1):
         c = chunks[i]
         pages = f"p. {c['page_start']}" + (
             f"-{c['page_end']}" if c["page_end"] != c["page_start"] else ""
         )
-        text = " ".join(c["text"].split())[:SNIPPET]
-        print(f"{rank}. {c['slug']}, {pages}  ({float(query[0] @ docs[i]):.3f})\n   {text}...\n")
+        header = f"{rank}. {c['slug']}, {pages}"
+        if color:
+            header = f"\033[1;33m{header}\033[0m"
+        text = textwrap.fill(
+            " ".join(c["text"].split())[:SNIPPET] + "...",
+            width=width,
+            initial_indent="   ",
+            subsequent_indent="   ",
+        )
+        print(f"{header}  ({float(query[0] @ docs[i]):.3f})\n{text}\n")
 
 
 if __name__ == "__main__":
