@@ -1,0 +1,1519 @@
+{
+ "model": "intfloat/multilingual-e5-base",
+ "questions": 59,
+ "unreachable": [
+  "em-01"
+ ],
+ "configs": {
+  "completo": {
+   "chunks": 2049,
+   "hit@1": {
+    "mean": 0.3559322033898305,
+    "ci95": [
+     0.23728813559322035,
+     0.4745762711864407
+    ]
+   },
+   "hit@5": {
+    "mean": 0.7288135593220338,
+    "ci95": [
+     0.6101694915254238,
+     0.8305084745762712
+    ]
+   },
+   "hit@10": {
+    "mean": 0.7966101694915254,
+    "ci95": [
+     0.6949152542372882,
+     0.8983050847457628
+    ]
+   },
+   "mrr@10": {
+    "mean": 0.5082324455205811,
+    "ci95": [
+     0.40782788539144466,
+     0.6093654156577885
+    ]
+   }
+  },
+  "sem-metodologia": {
+   "chunks": 1073,
+   "hit@1": {
+    "mean": 0.3898305084745763,
+    "ci95": [
+     0.2711864406779661,
+     0.5084745762711864
+    ]
+   },
+   "hit@5": {
+    "mean": 0.7627118644067796,
+    "ci95": [
+     0.6610169491525424,
+     0.864406779661017
+    ]
+   },
+   "hit@10": {
+    "mean": 0.847457627118644,
+    "ci95": [
+     0.7457627118644068,
+     0.9322033898305084
+    ]
+   },
+   "mrr@10": {
+    "mean": 0.5425544794188862,
+    "ci95": [
+     0.4421080508474576,
+     0.6419693301049233
+    ]
+   }
+  }
+ },
+ "per_question": [
+  {
+   "id": "ea-01",
+   "question": "Qual a dose diária de sulfassalazina na espondilite ancilosante?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "espondilite-ancilosante:12",
+     "dor-cronica:44",
+     "espondilite-ancilosante:46",
+     "doenca-de-parkinson:26",
+     "artrite-psoriasica:19"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "espondilite-ancilosante:12",
+     "dor-cronica:44",
+     "espondilite-ancilosante:46",
+     "doenca-de-parkinson:26",
+     "artrite-psoriasica:19"
+    ]
+   }
+  },
+  {
+   "id": "ea-02",
+   "question": "Quais exames pedir antes de começar um anti-TNF em paciente com espondilite?",
+   "completo": {
+    "rank": 10,
+    "top5": [
+     "espondilite-ancilosante:13",
+     "espondilite-ancilosante:44",
+     "espondilite-ancilosante:45",
+     "espondilite-ancilosante:43",
+     "espondilite-ancilosante:14"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 7,
+    "top5": [
+     "espondilite-ancilosante:13",
+     "espondilite-ancilosante:14",
+     "espondilite-ancilosante:12",
+     "espondilite-ancilosante:15",
+     "espondilite-ancilosante:16"
+    ]
+   }
+  },
+  {
+   "id": "ea-03",
+   "question": "Qual valor de BASDAI indica doença ativa na espondilite ancilosante?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "espondilite-ancilosante:6",
+     "espondilite-ancilosante:38",
+     "espondilite-ancilosante:3",
+     "espondilite-ancilosante:45",
+     "artrite-psoriasica:45"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "espondilite-ancilosante:6",
+     "espondilite-ancilosante:38",
+     "espondilite-ancilosante:3",
+     "artrite-psoriasica:45",
+     "artrite-psoriasica:44"
+    ]
+   }
+  },
+  {
+   "id": "ea-04",
+   "question": "Na espondilite com artrite periférica, por quanto tempo usar sulfassalazina antes de pensar em anti-TNF?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "espondilite-ancilosante:12",
+     "espondilite-ancilosante:18",
+     "espondilite-ancilosante:44",
+     "espondilite-ancilosante:15",
+     "espondilite-ancilosante:13"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "espondilite-ancilosante:12",
+     "espondilite-ancilosante:18",
+     "espondilite-ancilosante:15",
+     "espondilite-ancilosante:13",
+     "espondilite-ancilosante:46"
+    ]
+   }
+  },
+  {
+   "id": "em-01",
+   "question": "O que significa uma pontuação 3,0 na escala EDSS?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "esclerose-multipla:80",
+     "artrite-psoriasica:45",
+     "esclerose-multipla:6",
+     "esclerose-multipla:82",
+     "dor-cronica:97"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "artrite-psoriasica:45",
+     "esclerose-multipla:6",
+     "dor-cronica:97",
+     "esclerose-multipla:5",
+     "epilepsia:85"
+    ]
+   }
+  },
+  {
+   "id": "em-02",
+   "question": "De quanto em quanto tempo a EDSS deve ser recalculada em quem trata esclerose múltipla?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "esclerose-multipla:6",
+     "esclerose-multipla:79",
+     "esclerose-multipla:80",
+     "esclerose-multipla:1",
+     "esclerose-multipla:13"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "esclerose-multipla:6",
+     "esclerose-multipla:1",
+     "esclerose-multipla:13",
+     "esclerose-multipla:42",
+     "esclerose-multipla:3"
+    ]
+   }
+  },
+  {
+   "id": "em-03",
+   "question": "Quanto tempo a paciente deve esperar depois de parar o fingolimode para engravidar?",
+   "completo": {
+    "rank": 3,
+    "top5": [
+     "esclerose-multipla:115",
+     "esclerose-multipla:34",
+     "esclerose-multipla:41",
+     "esclerose-multipla:35",
+     "esclerose-multipla:114"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "esclerose-multipla:34",
+     "esclerose-multipla:41",
+     "esclerose-multipla:35",
+     "esclerose-multipla:36",
+     "esclerose-multipla:12"
+    ]
+   }
+  },
+  {
+   "id": "em-04",
+   "question": "Quais fatores aumentam o risco de LEMP em quem usa natalizumabe?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "esclerose-multipla:37",
+     "esclerose-multipla:9",
+     "esclerose-multipla:17",
+     "esclerose-multipla:61",
+     "esclerose-multipla:36"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "esclerose-multipla:37",
+     "esclerose-multipla:9",
+     "esclerose-multipla:17",
+     "esclerose-multipla:61",
+     "esclerose-multipla:36"
+    ]
+   }
+  },
+  {
+   "id": "as-01",
+   "question": "Qual contagem de eosinófilos no sangue é exigida para usar mepolizumabe na asma grave?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "asma:52",
+     "asma:54",
+     "asma:86",
+     "asma:36",
+     "asma:88"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "asma:52",
+     "asma:54",
+     "asma:36",
+     "asma:88",
+     "asma:53"
+    ]
+   }
+  },
+  {
+   "id": "as-02",
+   "question": "Qual a dose de prednisolona numa crise grave de asma em adultos?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "asma:50",
+     "asma:64",
+     "dpoc:28",
+     "asma:35",
+     "esclerose-multipla:13"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "asma:50",
+     "asma:64",
+     "dpoc:28",
+     "asma:35",
+     "esclerose-multipla:13"
+    ]
+   }
+  },
+  {
+   "id": "as-03",
+   "question": "Como evitar candidíase na boca causada pelo corticoide inalatório?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "asma:70",
+     "dpoc:28",
+     "asma:50",
+     "asma:59",
+     "dpoc:34"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "asma:70",
+     "dpoc:28",
+     "asma:50",
+     "asma:59",
+     "dpoc:34"
+    ]
+   }
+  },
+  {
+   "id": "as-04",
+   "question": "Qual nível de IgE sérica é exigido para indicar omalizumabe?",
+   "completo": {
+    "rank": 4,
+    "top5": [
+     "asma:66",
+     "asma:52",
+     "asma:54",
+     "asma:36",
+     "asma:67"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "asma:66",
+     "asma:52",
+     "asma:54",
+     "asma:36",
+     "asma:67"
+    ]
+   }
+  },
+  {
+   "id": "dp-01",
+   "question": "Qual resultado da espirometria confirma DPOC?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "dpoc:5",
+     "dpoc:29",
+     "dpoc:6",
+     "dpoc:2",
+     "dpoc:3"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "dpoc:5",
+     "dpoc:29",
+     "dpoc:6",
+     "dpoc:2",
+     "dpoc:3"
+    ]
+   }
+  },
+  {
+   "id": "dp-02",
+   "question": "Por quantas horas por dia o oxigênio domiciliar precisa ser usado para reduzir a mortalidade na DPOC?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "dpoc:22",
+     "dpoc:29",
+     "dpoc:3",
+     "asma:33",
+     "dpoc:1"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "dpoc:22",
+     "dpoc:29",
+     "dpoc:3",
+     "asma:33",
+     "dpoc:1"
+    ]
+   }
+  },
+  {
+   "id": "dp-03",
+   "question": "Quais associações de LAMA com LABA o SUS oferece para DPOC?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "dpoc:78",
+     "dpoc:77",
+     "dpoc:79",
+     "dpoc:76",
+     "dpoc:58"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 8,
+    "top5": [
+     "asma:34",
+     "asma:35",
+     "dpoc:44",
+     "asma:71",
+     "asma:70"
+    ]
+   }
+  },
+  {
+   "id": "dp-04",
+   "question": "Quando oferecer remédio para parar de fumar ao paciente com DPOC?",
+   "completo": {
+    "rank": 4,
+    "top5": [
+     "dpoc:3",
+     "dpoc:5",
+     "asma:35",
+     "dpoc:11",
+     "dpoc:13"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "dpoc:3",
+     "dpoc:5",
+     "asma:35",
+     "dpoc:11",
+     "dpoc:13"
+    ]
+   }
+  },
+  {
+   "id": "pk-01",
+   "question": "Qual a dose máxima diária de levodopa?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:26",
+     "doenca-de-parkinson:27",
+     "epilepsia:51",
+     "epilepsia:52",
+     "epilepsia:50"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:26",
+     "doenca-de-parkinson:27",
+     "epilepsia:51",
+     "epilepsia:52",
+     "epilepsia:50"
+    ]
+   }
+  },
+  {
+   "id": "pk-02",
+   "question": "Qual antipsicótico trata a psicose do Parkinson sem piorar os sintomas motores?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:19",
+     "doenca-de-parkinson:21",
+     "doenca-de-parkinson:18",
+     "doenca-de-parkinson:9"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:19",
+     "doenca-de-parkinson:21",
+     "doenca-de-parkinson:18",
+     "doenca-de-parkinson:9"
+    ]
+   }
+  },
+  {
+   "id": "pk-03",
+   "question": "Quais remédios para Parkinson podem levar a compulsão por jogo ou compras?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:18",
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:17",
+     "doenca-de-parkinson:50",
+     "doenca-de-parkinson:24"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:18",
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:17",
+     "doenca-de-parkinson:50",
+     "doenca-de-parkinson:24"
+    ]
+   }
+  },
+  {
+   "id": "pk-04",
+   "question": "Qual o risco hematológico da clozapina na doença de Parkinson?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:21",
+     "doenca-de-parkinson:24",
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:53",
+     "doenca-de-parkinson:112"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-parkinson:21",
+     "doenca-de-parkinson:24",
+     "doenca-de-parkinson:22",
+     "doenca-de-parkinson:53",
+     "doenca-de-parkinson:112"
+    ]
+   }
+  },
+  {
+   "id": "az-01",
+   "question": "Qual faixa do MEEM permite iniciar donepezila em quem estudou mais de 4 anos?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-alzheimer:12",
+     "doenca-de-alzheimer:24",
+     "doenca-de-alzheimer:11",
+     "doenca-de-alzheimer:91",
+     "doenca-de-alzheimer:54"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-alzheimer:12",
+     "doenca-de-alzheimer:24",
+     "doenca-de-alzheimer:11",
+     "doenca-de-alzheimer:25",
+     "esclerose-multipla:1"
+    ]
+   }
+  },
+  {
+   "id": "az-02",
+   "question": "Como ajustar a memantina quando a função renal está reduzida?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-alzheimer:26",
+     "artrite-reumatoide:107",
+     "doenca-de-alzheimer:27",
+     "doenca-de-alzheimer:24",
+     "doenca-de-alzheimer:12"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "doenca-de-alzheimer:26",
+     "artrite-reumatoide:107",
+     "doenca-de-alzheimer:27",
+     "doenca-de-alzheimer:24",
+     "doenca-de-alzheimer:12"
+    ]
+   }
+  },
+  {
+   "id": "az-03",
+   "question": "Qual a dose inicial de donepezila e quando aumentar?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "doenca-de-alzheimer:25",
+     "doenca-de-alzheimer:21",
+     "dor-cronica:44",
+     "doenca-de-parkinson:16",
+     "doenca-de-parkinson:26"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "doenca-de-alzheimer:25",
+     "doenca-de-alzheimer:21",
+     "dor-cronica:44",
+     "doenca-de-parkinson:16",
+     "doenca-de-parkinson:26"
+    ]
+   }
+  },
+  {
+   "id": "az-04",
+   "question": "Quando a memantina pode ser associada a um inibidor da colinesterase no Alzheimer?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "doenca-de-alzheimer:19",
+     "doenca-de-alzheimer:46",
+     "doenca-de-alzheimer:97",
+     "doenca-de-alzheimer:54",
+     "doenca-de-alzheimer:53"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "doenca-de-alzheimer:19",
+     "doenca-de-alzheimer:46",
+     "doenca-de-alzheimer:24",
+     "doenca-de-alzheimer:11",
+     "doenca-de-alzheimer:48"
+    ]
+   }
+  },
+  {
+   "id": "dc-01",
+   "question": "Qual a dose máxima de gabapentina para dor crônica?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "dor-cronica:44",
+     "dor-cronica:41",
+     "dor-cronica:36",
+     "dor-cronica:43",
+     "dor-cronica:201"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "dor-cronica:44",
+     "dor-cronica:41",
+     "dor-cronica:36",
+     "dor-cronica:43",
+     "epilepsia:29"
+    ]
+   }
+  },
+  {
+   "id": "dc-02",
+   "question": "O SUS fornece pregabalina para fibromialgia?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "dor-cronica:191",
+     "dor-cronica:193",
+     "dor-cronica:74",
+     "dor-cronica:181",
+     "dor-cronica:190"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 5,
+    "top5": [
+     "dor-cronica:74",
+     "dor-cronica:37",
+     "dor-cronica:66",
+     "dpoc:16",
+     "dor-cronica:33"
+    ]
+   }
+  },
+  {
+   "id": "dc-03",
+   "question": "Qual a dose máxima diária de metadona em adultos com dor crônica?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "epilepsia:52",
+     "dor-cronica:42",
+     "dor-cronica:26",
+     "dor-cronica:39",
+     "dor-cronica:54"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "epilepsia:52",
+     "dor-cronica:42",
+     "dor-cronica:26",
+     "dor-cronica:39",
+     "dor-cronica:54"
+    ]
+   }
+  },
+  {
+   "id": "dc-04",
+   "question": "Como converter a dose de morfina venosa para oral?",
+   "completo": {
+    "rank": 3,
+    "top5": [
+     "dor-cronica:233",
+     "dor-cronica:301",
+     "dor-cronica:44",
+     "dor-cronica:297",
+     "dor-cronica:232"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "dor-cronica:44",
+     "dor-cronica:39",
+     "dor-cronica:84",
+     "doenca-de-alzheimer:21",
+     "dor-cronica:40"
+    ]
+   }
+  },
+  {
+   "id": "ar-01",
+   "question": "Qual a dose semanal de metotrexato na artrite reumatoide?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "artrite-reumatoide:140",
+     "artrite-reumatoide:152",
+     "artrite-reumatoide:14",
+     "psoriase:36",
+     "psoriase:35"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 5,
+    "top5": [
+     "artrite-reumatoide:14",
+     "psoriase:36",
+     "psoriase:35",
+     "artrite-reumatoide:20",
+     "artrite-reumatoide:27"
+    ]
+   }
+  },
+  {
+   "id": "ar-02",
+   "question": "Quantos pontos nos critérios ACR/EULAR classificam artrite reumatoide?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "artrite-reumatoide:5",
+     "artrite-reumatoide:4",
+     "artrite-reumatoide:6",
+     "artrite-reumatoide:11",
+     "artrite-reumatoide:10"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "artrite-reumatoide:5",
+     "artrite-reumatoide:4",
+     "artrite-reumatoide:6",
+     "artrite-reumatoide:11",
+     "artrite-reumatoide:10"
+    ]
+   }
+  },
+  {
+   "id": "ar-03",
+   "question": "Quais manifestações fora das articulações aparecem na artrite idiopática juvenil?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "artrite-reumatoide:56",
+     "artrite-reumatoide:57",
+     "artrite-reumatoide:58",
+     "artrite-reumatoide:54",
+     "artrite-reumatoide:53"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "artrite-reumatoide:56",
+     "artrite-reumatoide:57",
+     "artrite-reumatoide:58",
+     "artrite-reumatoide:54",
+     "artrite-reumatoide:53"
+    ]
+   }
+  },
+  {
+   "id": "ar-04",
+   "question": "Por quanto tempo manter um tratamento na artrite reumatoide antes de trocar ou aumentar a dose?",
+   "completo": {
+    "rank": 5,
+    "top5": [
+     "artrite-reumatoide:32",
+     "artrite-reumatoide:174",
+     "artrite-reumatoide:12",
+     "artrite-reumatoide:129",
+     "artrite-reumatoide:151"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 3,
+    "top5": [
+     "artrite-reumatoide:32",
+     "artrite-reumatoide:12",
+     "artrite-reumatoide:19",
+     "artrite-reumatoide:80",
+     "psoriase:36"
+    ]
+   }
+  },
+  {
+   "id": "ap-01",
+   "question": "Quantos pontos no CASPAR são necessários para classificar artrite psoriásica?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "artrite-psoriasica:6",
+     "artrite-psoriasica:7",
+     "artrite-psoriasica:23",
+     "artrite-psoriasica:45",
+     "artrite-reumatoide:11"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "artrite-psoriasica:6",
+     "artrite-psoriasica:7",
+     "artrite-psoriasica:23",
+     "artrite-psoriasica:45",
+     "artrite-reumatoide:11"
+    ]
+   }
+  },
+  {
+   "id": "ap-02",
+   "question": "O que é dactilite na artrite psoriásica?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "artrite-psoriasica:6",
+     "artrite-psoriasica:4",
+     "artrite-psoriasica:2",
+     "artrite-reumatoide:59",
+     "artrite-psoriasica:1"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "artrite-psoriasica:6",
+     "artrite-psoriasica:4",
+     "artrite-psoriasica:2",
+     "artrite-reumatoide:59",
+     "artrite-psoriasica:1"
+    ]
+   }
+  },
+  {
+   "id": "ap-03",
+   "question": "Qual a apresentação de secuquinumabe disponível para artrite psoriásica?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "artrite-psoriasica:68",
+     "psoriase:58",
+     "artrite-psoriasica:54",
+     "psoriase:138",
+     "artrite-psoriasica:49"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "artrite-psoriasica:68",
+     "psoriase:58",
+     "psoriase:61",
+     "psoriase:30",
+     "artrite-psoriasica:33"
+    ]
+   }
+  },
+  {
+   "id": "ps-01",
+   "question": "A partir de qual PASI a psoríase é considerada grave?",
+   "completo": {
+    "rank": 7,
+    "top5": [
+     "psoriase:9",
+     "psoriase:8",
+     "psoriase:97",
+     "psoriase:40",
+     "psoriase:41"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 6,
+    "top5": [
+     "psoriase:9",
+     "psoriase:8",
+     "psoriase:40",
+     "psoriase:41",
+     "psoriase:18"
+    ]
+   }
+  },
+  {
+   "id": "ps-02",
+   "question": "Com qual nível de triglicerídeos a acitretina deve ser suspensa?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "psoriase:45",
+     "artrite-reumatoide:113",
+     "psoriase:40",
+     "dislipidemia:21",
+     "psoriase:46"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "psoriase:45",
+     "artrite-reumatoide:113",
+     "psoriase:40",
+     "dislipidemia:21",
+     "psoriase:46"
+    ]
+   }
+  },
+  {
+   "id": "ps-03",
+   "question": "Por quanto tempo no máximo a ciclosporina pode ser usada na psoríase?",
+   "completo": {
+    "rank": 5,
+    "top5": [
+     "psoriase:37",
+     "psoriase:16",
+     "psoriase:27",
+     "psoriase:54",
+     "psoriase:40"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 5,
+    "top5": [
+     "psoriase:37",
+     "psoriase:16",
+     "psoriase:27",
+     "psoriase:54",
+     "psoriase:40"
+    ]
+   }
+  },
+  {
+   "id": "ps-04",
+   "question": "Quem não pode fazer fototerapia para psoríase?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "psoriase:20",
+     "psoriase:27",
+     "psoriase:42",
+     "psoriase:16",
+     "psoriase:104"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "psoriase:20",
+     "psoriase:27",
+     "psoriase:42",
+     "psoriase:16",
+     "psoriase:25"
+    ]
+   }
+  },
+  {
+   "id": "d1-01",
+   "question": "Qual a meta de hemoglobina glicada para adultos com diabetes tipo 1?",
+   "completo": {
+    "rank": 6,
+    "top5": [
+     "diabete-melito-2:19",
+     "diabete-melito-1:10",
+     "diabete-melito-1:6",
+     "diabete-melito-2:18",
+     "diabete-melito-2:6"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 6,
+    "top5": [
+     "diabete-melito-2:19",
+     "diabete-melito-1:10",
+     "diabete-melito-1:6",
+     "diabete-melito-2:18",
+     "diabete-melito-2:6"
+    ]
+   }
+  },
+  {
+   "id": "d1-02",
+   "question": "Quais critérios para receber análogo de insulina de ação rápida no SUS?",
+   "completo": {
+    "rank": 5,
+    "top5": [
+     "diabete-melito-1:22",
+     "diabete-melito-1:20",
+     "diabete-melito-1:21",
+     "diabete-melito-1:61",
+     "diabete-melito-1:8"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "diabete-melito-1:22",
+     "diabete-melito-1:20",
+     "diabete-melito-1:21",
+     "diabete-melito-1:8",
+     "diabete-melito-1:24"
+    ]
+   }
+  },
+  {
+   "id": "d1-03",
+   "question": "Quantas vezes por dia medir a glicemia capilar no diabetes tipo 1?",
+   "completo": {
+    "rank": 4,
+    "top5": [
+     "diabete-melito-2:28",
+     "diabete-melito-1:9",
+     "diabete-melito-1:8",
+     "diabete-melito-1:33",
+     "diabete-melito-1:76"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "diabete-melito-2:28",
+     "diabete-melito-1:9",
+     "diabete-melito-1:8",
+     "diabete-melito-1:33",
+     "diabete-melito-2:6"
+    ]
+   }
+  },
+  {
+   "id": "d1-04",
+   "question": "Em quais regiões do corpo não se deve aplicar insulina?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:103",
+     "diabete-melito-1:24",
+     "diabete-melito-2:38",
+     "diabete-melito-1:48",
+     "diabete-melito-2:105"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:103",
+     "diabete-melito-1:24",
+     "diabete-melito-2:38",
+     "diabete-melito-1:48",
+     "diabete-melito-2:105"
+    ]
+   }
+  },
+  {
+   "id": "d1-05",
+   "question": "Qual hemoglobina glicada buscar antes de engravidar com diabetes tipo 1?",
+   "completo": {
+    "rank": 4,
+    "top5": [
+     "diabete-melito-2:6",
+     "diabete-melito-1:6",
+     "diabete-melito-2:9",
+     "diabete-melito-1:12",
+     "diabete-melito-2:8"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 4,
+    "top5": [
+     "diabete-melito-2:6",
+     "diabete-melito-1:6",
+     "diabete-melito-2:9",
+     "diabete-melito-1:12",
+     "diabete-melito-2:8"
+    ]
+   }
+  },
+  {
+   "id": "d2-01",
+   "question": "Qual a dose máxima diária de metformina?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:33",
+     "diabete-melito-2:34",
+     "artrite-psoriasica:18",
+     "epilepsia:52",
+     "dor-cronica:44"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:33",
+     "diabete-melito-2:34",
+     "artrite-psoriasica:18",
+     "epilepsia:52",
+     "dor-cronica:44"
+    ]
+   }
+  },
+  {
+   "id": "d2-02",
+   "question": "Abaixo de qual filtração glomerular a metformina é contraindicada?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "diabete-melito-2:34",
+     "diabete-melito-2:100",
+     "diabete-melito-2:35",
+     "diabete-melito-2:68",
+     "diabete-melito-2:36"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "diabete-melito-2:34",
+     "diabete-melito-2:100",
+     "diabete-melito-2:35",
+     "diabete-melito-2:68",
+     "diabete-melito-2:36"
+    ]
+   }
+  },
+  {
+   "id": "d2-03",
+   "question": "Qual glicemia de jejum confirma o diagnóstico de diabetes tipo 2?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "diabete-melito-2:10",
+     "diabete-melito-2:8",
+     "diabete-melito-1:5",
+     "diabete-melito-2:11",
+     "diabete-melito-2:6"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "diabete-melito-2:10",
+     "diabete-melito-2:8",
+     "diabete-melito-1:5",
+     "diabete-melito-2:11",
+     "diabete-melito-2:6"
+    ]
+   }
+  },
+  {
+   "id": "d2-04",
+   "question": "Quem tem direito a dapagliflozina no SUS?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:37",
+     "espondilite-ancilosante:8",
+     "dpoc:76",
+     "diabete-melito-2:91",
+     "diabete-melito-2:72"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "diabete-melito-2:37",
+     "espondilite-ancilosante:8",
+     "diabete-melito-2:91",
+     "diabete-melito-2:72",
+     "espondilite-ancilosante:49"
+    ]
+   }
+  },
+  {
+   "id": "dl-01",
+   "question": "Quanto a CPK precisa subir para suspender a estatina?",
+   "completo": {
+    "rank": 7,
+    "top5": [
+     "artrite-reumatoide:107",
+     "artrite-reumatoide:108",
+     "artrite-reumatoide:113",
+     "artrite-reumatoide:80",
+     "dislipidemia:12"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 7,
+    "top5": [
+     "artrite-reumatoide:107",
+     "artrite-reumatoide:108",
+     "artrite-reumatoide:113",
+     "artrite-reumatoide:80",
+     "dislipidemia:12"
+    ]
+   }
+  },
+  {
+   "id": "dl-02",
+   "question": "Acima de qual nível de triglicerídeos o fibrato é indicado para prevenir pancreatite?",
+   "completo": {
+    "rank": 3,
+    "top5": [
+     "dislipidemia:21",
+     "dislipidemia:15",
+     "dislipidemia:7",
+     "dislipidemia:22",
+     "dislipidemia:9"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 3,
+    "top5": [
+     "dislipidemia:21",
+     "dislipidemia:15",
+     "dislipidemia:7",
+     "dislipidemia:22",
+     "dislipidemia:9"
+    ]
+   }
+  },
+  {
+   "id": "dl-03",
+   "question": "Estatina pode ser usada na gravidez?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "dislipidemia:41",
+     "diabete-melito-1:13",
+     "asma:61",
+     "psoriase:46",
+     "artrite-reumatoide:44"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "dislipidemia:41",
+     "diabete-melito-1:13",
+     "asma:61",
+     "psoriase:46",
+     "artrite-reumatoide:44"
+    ]
+   }
+  },
+  {
+   "id": "dl-04",
+   "question": "Em quais doses a sinvastatina está disponível?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "dislipidemia:11",
+     "dislipidemia:20",
+     "dislipidemia:21",
+     "dislipidemia:12",
+     "dor-cronica:44"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "dislipidemia:11",
+     "dislipidemia:20",
+     "dislipidemia:21",
+     "dislipidemia:12",
+     "dor-cronica:44"
+    ]
+   }
+  },
+  {
+   "id": "ep-01",
+   "question": "Qual a dose inicial de carbamazepina em adultos?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "dor-cronica:41",
+     "epilepsia:49",
+     "dor-cronica:44",
+     "dor-cronica:43",
+     "epilepsia:52"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "dor-cronica:41",
+     "epilepsia:49",
+     "dor-cronica:44",
+     "dor-cronica:43",
+     "epilepsia:52"
+    ]
+   }
+  },
+  {
+   "id": "ep-02",
+   "question": "Por que evitar ácido valproico em mulheres que querem engravidar?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "epilepsia:10",
+     "epilepsia:11",
+     "epilepsia:33",
+     "dor-cronica:80",
+     "artrite-psoriasica:38"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "epilepsia:10",
+     "epilepsia:11",
+     "epilepsia:33",
+     "dor-cronica:80",
+     "artrite-psoriasica:38"
+    ]
+   }
+  },
+  {
+   "id": "ep-03",
+   "question": "Depois de quanto tempo sem crises dá para pensar em retirar o antiepiléptico?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "epilepsia:56",
+     "epilepsia:55",
+     "epilepsia:95",
+     "epilepsia:19",
+     "epilepsia:17"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "epilepsia:56",
+     "epilepsia:55",
+     "epilepsia:19",
+     "epilepsia:17",
+     "epilepsia:9"
+    ]
+   }
+  },
+  {
+   "id": "ep-04",
+   "question": "Qual remédio é preferido na epilepsia mioclônica juvenil em mulheres em idade fértil?",
+   "completo": {
+    "rank": 2,
+    "top5": [
+     "epilepsia:9",
+     "epilepsia:34",
+     "epilepsia:26",
+     "epilepsia:21",
+     "epilepsia:25"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 2,
+    "top5": [
+     "epilepsia:9",
+     "epilepsia:34",
+     "epilepsia:26",
+     "epilepsia:21",
+     "epilepsia:25"
+    ]
+   }
+  },
+  {
+   "id": "td-01",
+   "question": "O SUS oferece metilfenidato para TDAH?",
+   "completo": {
+    "rank": 3,
+    "top5": [
+     "tdah:43",
+     "tdah:116",
+     "tdah:15",
+     "tdah:44",
+     "tdah:101"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "tdah:15",
+     "tdah:31",
+     "tdah:34",
+     "tdah:12",
+     "tdah:16"
+    ]
+   }
+  },
+  {
+   "id": "td-02",
+   "question": "Qual questionário pode ser usado na escola para avaliar sintomas de TDAH?",
+   "completo": {
+    "rank": null,
+    "top5": [
+     "tdah:8",
+     "tdah:21",
+     "tdah:20",
+     "tdah:11",
+     "tdah:51"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": null,
+    "top5": [
+     "tdah:8",
+     "tdah:21",
+     "tdah:20",
+     "tdah:11",
+     "tdah:4"
+    ]
+   }
+  },
+  {
+   "id": "td-03",
+   "question": "Qual intervenção psicossocial se destaca no tratamento do TDAH?",
+   "completo": {
+    "rank": 1,
+    "top5": [
+     "tdah:14",
+     "tdah:13",
+     "tdah:17",
+     "tdah:158",
+     "tdah:18"
+    ]
+   },
+   "sem-metodologia": {
+    "rank": 1,
+    "top5": [
+     "tdah:14",
+     "tdah:13",
+     "tdah:17",
+     "tdah:18",
+     "tdah:12"
+    ]
+   }
+  }
+ ],
+ "diff": {
+  "hit@1": {
+   "mean": 0.03389830508474576,
+   "ci95": [
+    0.0,
+    0.0847457627118644
+   ]
+  },
+  "hit@5": {
+   "mean": 0.03389830508474576,
+   "ci95": [
+    0.0,
+    0.0847457627118644
+   ]
+  },
+  "hit@10": {
+   "mean": 0.05084745762711865,
+   "ci95": [
+    0.0,
+    0.11864406779661017
+   ]
+  },
+  "mrr@10": {
+   "mean": 0.03432203389830509,
+   "ci95": [
+    0.0033898305084745766,
+    0.07284251412429377
+   ]
+  }
+ }
+}

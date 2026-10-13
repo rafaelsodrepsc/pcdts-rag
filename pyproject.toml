@@ -8,6 +8,9 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "huggingface-hub>=2.2.0",
+    "numpy>=2.5.4",
+    "onnxruntime>=1.31.0",
     "pymupdf>=1.28.2",
     "tokenizers>=0.23.3",
 ]
@@ -16,6 +19,9 @@ dependencies = [
 pcdt-download = "pcdt_rag.corpus:main"
 pcdt-extract = "pcdt_rag.extract:main"
 pcdt-chunk = "pcdt_rag.chunk:main"
+pcdt-embed = "pcdt_rag.embed:main"
+pcdt-eval = "pcdt_rag.evaluate:main"
+pcdt-search = "pcdt_rag.retrieve:main"
 
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]

@@ -1,0 +1,59 @@
+{"id": "ea-01", "slug": "espondilite-ancilosante", "pages": [6], "question": "Qual a dose diária de sulfassalazina na espondilite ancilosante?", "answer": "500 mg/dia a 3.000 mg/dia, em 2 administrações (12/12 h)."}
+{"id": "ea-02", "slug": "espondilite-ancilosante", "pages": [6], "question": "Quais exames pedir antes de começar um anti-TNF em paciente com espondilite?", "answer": "Investigar tuberculose latente (teste tuberculínico e radiografia de tórax), hepatites B e C e HIV."}
+{"id": "ea-03", "slug": "espondilite-ancilosante", "pages": [2, 3, 5], "question": "Qual valor de BASDAI indica doença ativa na espondilite ancilosante?", "answer": "BASDAI igual ou superior a 4."}
+{"id": "ea-04", "slug": "espondilite-ancilosante", "pages": [6, 15], "question": "Na espondilite com artrite periférica, por quanto tempo usar sulfassalazina antes de pensar em anti-TNF?", "answer": "6 meses em dose adequada, depois de falha com infiltração e 2 AINEs."}
+{"id": "em-01", "slug": "esclerose-multipla", "pages": [33, 34], "question": "O que significa uma pontuação 3,0 na escala EDSS?", "answer": "Está na tabela da EDSS (Apêndice 1), que no PDF é imagem."}
+{"id": "em-02", "slug": "esclerose-multipla", "pages": [16, 17, 18, 19], "question": "De quanto em quanto tempo a EDSS deve ser recalculada em quem trata esclerose múltipla?", "answer": "A cada 3 meses."}
+{"id": "em-03", "slug": "esclerose-multipla", "pages": [23], "question": "Quanto tempo a paciente deve esperar depois de parar o fingolimode para engravidar?", "answer": "Dois meses após a interrupção."}
+{"id": "em-04", "slug": "esclerose-multipla", "pages": [6], "question": "Quais fatores aumentam o risco de LEMP em quem usa natalizumabe?", "answer": "Anticorpos anti-JCV, mais de 2 anos de tratamento e uso prévio de imunossupressor."}
+{"id": "as-01", "slug": "asma", "pages": [20, 30], "question": "Qual contagem de eosinófilos no sangue é exigida para usar mepolizumabe na asma grave?", "answer": ">= 300 células/µL, ou >= 150 células/µL em uso contínuo de corticoide oral."}
+{"id": "as-02", "slug": "asma", "pages": [38], "question": "Qual a dose de prednisolona numa crise grave de asma em adultos?", "answer": "40 a 50 mg/dia por 5 a 7 dias."}
+{"id": "as-03", "slug": "asma", "pages": [43, 48], "question": "Como evitar candidíase na boca causada pelo corticoide inalatório?", "answer": "Usar espaçador com o pMDI e enxaguar a boca com água e cuspir após a inalação."}
+{"id": "as-04", "slug": "asma", "pages": [20], "question": "Qual nível de IgE sérica é exigido para indicar omalizumabe?", "answer": "IgE sérica igual ou superior a 30 UI/mL, com sensibilização a aeroalérgeno."}
+{"id": "dp-01", "slug": "dpoc", "pages": [4], "question": "Qual resultado da espirometria confirma DPOC?", "answer": "Relação VEF1/CVF inferior a 0,7 pós-broncodilatador."}
+{"id": "dp-02", "slug": "dpoc", "pages": [14], "question": "Por quantas horas por dia o oxigênio domiciliar precisa ser usado para reduzir a mortalidade na DPOC?", "answer": "Mais de 15 horas por dia."}
+{"id": "dp-03", "slug": "dpoc", "pages": [10, 11, 13], "question": "Quais associações de LAMA com LABA o SUS oferece para DPOC?", "answer": "Umeclidínio + vilanterol e tiotrópio + olodaterol."}
+{"id": "dp-04", "slug": "dpoc", "pages": [8], "question": "Quando oferecer remédio para parar de fumar ao paciente com DPOC?", "answer": "Nos casos com dependência elevada à nicotina."}
+{"id": "pk-01", "slug": "doenca-de-parkinson", "pages": [15], "question": "Qual a dose máxima diária de levodopa?", "answer": "2.000 mg/dia."}
+{"id": "pk-02", "slug": "doenca-de-parkinson", "pages": [12], "question": "Qual antipsicótico trata a psicose do Parkinson sem piorar os sintomas motores?", "answer": "Clozapina."}
+{"id": "pk-03", "slug": "doenca-de-parkinson", "pages": [11, 19], "question": "Quais remédios para Parkinson podem levar a compulsão por jogo ou compras?", "answer": "Agonistas dopaminérgicos, especialmente pramipexol."}
+{"id": "pk-04", "slug": "doenca-de-parkinson", "pages": [12], "question": "Qual o risco hematológico da clozapina na doença de Parkinson?", "answer": "Agranulocitose."}
+{"id": "az-01", "slug": "doenca-de-alzheimer", "pages": [8], "question": "Qual faixa do MEEM permite iniciar donepezila em quem estudou mais de 4 anos?", "answer": "Entre 12 e 24, com CDR 1 ou 2."}
+{"id": "az-02", "slug": "doenca-de-alzheimer", "pages": [16], "question": "Como ajustar a memantina quando a função renal está reduzida?", "answer": "Reduzir a manutenção à metade (10 mg/dia) com depuração de creatinina abaixo de 50 mL/min."}
+{"id": "az-03", "slug": "doenca-de-alzheimer", "pages": [13], "question": "Qual a dose inicial de donepezila e quando aumentar?", "answer": "5 mg/dia, podendo subir para 10 mg/dia após 4 a 6 semanas."}
+{"id": "az-04", "slug": "doenca-de-alzheimer", "pages": [8], "question": "Quando a memantina pode ser associada a um inibidor da colinesterase no Alzheimer?", "answer": "Demência moderada: MEEM 12 a 19 (ou 8 a 15 com até 4 anos de estudo) e CDR 2."}
+{"id": "dc-01", "slug": "dor-cronica", "pages": [18], "question": "Qual a dose máxima de gabapentina para dor crônica?", "answer": "3.600 mg/dia."}
+{"id": "dc-02", "slug": "dor-cronica", "pages": [14], "question": "O SUS fornece pregabalina para fibromialgia?", "answer": "Não. A pregabalina não foi incorporada para dor neuropática e fibromialgia."}
+{"id": "dc-03", "slug": "dor-cronica", "pages": [18], "question": "Qual a dose máxima diária de metadona em adultos com dor crônica?", "answer": "40 mg/dia."}
+{"id": "dc-04", "slug": "dor-cronica", "pages": [19], "question": "Como converter a dose de morfina venosa para oral?", "answer": "Proporção 1:3 (venosa:oral)."}
+{"id": "ar-01", "slug": "artrite-reumatoide", "pages": [13, 73], "question": "Qual a dose semanal de metotrexato na artrite reumatoide?", "answer": "7,5 a 25 mg, uma vez por semana."}
+{"id": "ar-02", "slug": "artrite-reumatoide", "pages": [3, 16], "question": "Quantos pontos nos critérios ACR/EULAR classificam artrite reumatoide?", "answer": "6 pontos ou mais."}
+{"id": "ar-03", "slug": "artrite-reumatoide", "pages": [26], "question": "Quais manifestações fora das articulações aparecem na artrite idiopática juvenil?", "answer": "Psoríase, uveíte anterior, febre, erupção cutânea, serosite, esplenomegalia, entre outras."}
+{"id": "ar-04", "slug": "artrite-reumatoide", "pages": [9, 10, 73], "question": "Por quanto tempo manter um tratamento na artrite reumatoide antes de trocar ou aumentar a dose?", "answer": "Pelo menos 3 meses."}
+{"id": "ap-01", "slug": "artrite-psoriasica", "pages": [4], "question": "Quantos pontos no CASPAR são necessários para classificar artrite psoriásica?", "answer": "Três ou mais pontos, além de doença inflamatória articular."}
+{"id": "ap-02", "slug": "artrite-psoriasica", "pages": [2, 3], "question": "O que é dactilite na artrite psoriásica?", "answer": "O 'dedo em salsicha'."}
+{"id": "ap-03", "slug": "artrite-psoriasica", "pages": [10], "question": "Qual a apresentação de secuquinumabe disponível para artrite psoriásica?", "answer": "Solução injetável de 150 mg/mL."}
+{"id": "ps-01", "slug": "psoriase", "pages": [14], "question": "A partir de qual PASI a psoríase é considerada grave?", "answer": "PASI > 10 (ou BSA > 10% ou DLQI > 10)."}
+{"id": "ps-02", "slug": "psoriase", "pages": [7, 23, 25], "question": "Com qual nível de triglicerídeos a acitretina deve ser suspensa?", "answer": "Acima de 800 mg/dL."}
+{"id": "ps-03", "slug": "psoriase", "pages": [23], "question": "Por quanto tempo no máximo a ciclosporina pode ser usada na psoríase?", "answer": "Até 2 anos."}
+{"id": "ps-04", "slug": "psoriase", "pages": [7], "question": "Quem não pode fazer fototerapia para psoríase?", "answer": "Xeroderma pigmentoso, albinismo, dermatoses fotossensíveis, história de melanoma ou de múltiplos cânceres de pele."}
+{"id": "d1-01", "slug": "diabete-melito-1", "pages": [11], "question": "Qual a meta de hemoglobina glicada para adultos com diabetes tipo 1?", "answer": "HbA1c < 7,0% (Tabela 1; crianças e adolescentes < 7,5%, gestantes < 6,0%)."}
+{"id": "d1-02", "slug": "diabete-melito-1", "pages": [6], "question": "Quais critérios para receber análogo de insulina de ação rápida no SUS?", "answer": "Os do Quadro de inclusão para análogo de ação rápida (uso prévio de insulina NPH e regular, entre outros)."}
+{"id": "d1-03", "slug": "diabete-melito-1", "pages": [22], "question": "Quantas vezes por dia medir a glicemia capilar no diabetes tipo 1?", "answer": "Pelo menos três a quatro vezes ao dia."}
+{"id": "d1-04", "slug": "diabete-melito-1", "pages": [31], "question": "Em quais regiões do corpo não se deve aplicar insulina?", "answer": "Perto das juntas, na virilha, no umbigo e na linha média do abdômen. Está no Apêndice 2, que no PDF é imagem."}
+{"id": "d1-05", "slug": "diabete-melito-1", "pages": [9], "question": "Qual hemoglobina glicada buscar antes de engravidar com diabetes tipo 1?", "answer": "HbA1c < 6,5%."}
+{"id": "d2-01", "slug": "diabete-melito-2", "pages": [39], "question": "Qual a dose máxima diária de metformina?", "answer": "2.550 mg."}
+{"id": "d2-02", "slug": "diabete-melito-2", "pages": [23, 39], "question": "Abaixo de qual filtração glomerular a metformina é contraindicada?", "answer": "TFG < 30 mL/min/1,73 m²."}
+{"id": "d2-03", "slug": "diabete-melito-2", "pages": [6, 8], "question": "Qual glicemia de jejum confirma o diagnóstico de diabetes tipo 2?", "answer": ">= 126 mg/dL."}
+{"id": "d2-04", "slug": "diabete-melito-2", "pages": [12, 75, 78], "question": "Quem tem direito a dapagliflozina no SUS?", "answer": "DM2 com necessidade de segunda intensificação e alto risco ou doença cardiovascular estabelecida, 40 a 64 anos."}
+{"id": "dl-01", "slug": "dislipidemia", "pages": [10], "question": "Quanto a CPK precisa subir para suspender a estatina?", "answer": "10 vezes acima do valor normal."}
+{"id": "dl-02", "slug": "dislipidemia", "pages": [4], "question": "Acima de qual nível de triglicerídeos o fibrato é indicado para prevenir pancreatite?", "answer": "Acima de 500 mg/dL."}
+{"id": "dl-03", "slug": "dislipidemia", "pages": [4, 20], "question": "Estatina pode ser usada na gravidez?", "answer": "Não. Gestantes ficam fora do tratamento e estatinas não devem ser usadas na gestação."}
+{"id": "dl-04", "slug": "dislipidemia", "pages": [9], "question": "Em quais doses a sinvastatina está disponível?", "answer": "Comprimidos de 10, 20 e 40 mg."}
+{"id": "ep-01", "slug": "epilepsia", "pages": [24], "question": "Qual a dose inicial de carbamazepina em adultos?", "answer": "200 mg/dia."}
+{"id": "ep-02", "slug": "epilepsia", "pages": [6, 7, 16], "question": "Por que evitar ácido valproico em mulheres que querem engravidar?", "answer": "Maior risco de malformações congênitas na exposição durante a gestação."}
+{"id": "ep-03", "slug": "epilepsia", "pages": [29], "question": "Depois de quanto tempo sem crises dá para pensar em retirar o antiepiléptico?", "answer": "Mais de 2 anos sem crises (retirada precoce tem mais recorrência)."}
+{"id": "ep-04", "slug": "epilepsia", "pages": [17], "question": "Qual remédio é preferido na epilepsia mioclônica juvenil em mulheres em idade fértil?", "answer": "Lamotrigina."}
+{"id": "td-01", "slug": "tdah", "pages": [10], "question": "O SUS oferece metilfenidato para TDAH?", "answer": "Não. A Conitec recomendou não incorporar metilfenidato e lisdexanfetamina."}
+{"id": "td-02", "slug": "tdah", "pages": [4, 20], "question": "Qual questionário pode ser usado na escola para avaliar sintomas de TDAH?", "answer": "SNAP-IV."}
+{"id": "td-03", "slug": "tdah", "pages": [9], "question": "Qual intervenção psicossocial se destaca no tratamento do TDAH?", "answer": "Terapia cognitivo-comportamental (TCC)."}
