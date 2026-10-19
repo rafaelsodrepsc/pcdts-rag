@@ -27,6 +27,14 @@ uv run pcdt-search "Qual a dose máxima diária de metformina?"
 uv run pcdt-search "Qual a dose máxima diária de metformina?" --pipeline hibrida+bge
 ```
 
+### Interface web
+
+```bash
+uv run pcdt-web   # http://127.0.0.1:8000
+```
+
+Uma página local para fazer a pergunta, trocar o método de busca e ler os trechos com documento, página e os termos da pergunta marcados. O servidor mantém o índice e os modelos em memória e só escuta em `127.0.0.1`. A página carrega as duas fontes (Bricolage Grotesque e Instrument Sans) do Google Fonts e usa a fonte do sistema se estiver offline; nenhuma pergunta sai da máquina.
+
 ## Corpus
 
 15 PCDTs vigentes, 1.420 páginas no total, listados em `corpus/sources.toml`. Os PCDTs são atualizados de tempos em tempos, por isso o `data/raw/manifest.json` guarda o sha256 de cada PDF baixado.

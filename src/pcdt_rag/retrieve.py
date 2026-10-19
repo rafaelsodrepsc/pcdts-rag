@@ -34,6 +34,7 @@ RERANK_DEPTH = 20
 RRF_K = 60
 FIRST_STAGES = ("vetorial", "bm25", "hibrida")
 PIPELINES = (*FIRST_STAGES, *(f"hibrida+{m}" for m in MODELS))
+DEFAULT_PIPELINE = "hibrida+minilm"
 
 
 def load_chunks() -> list[dict]:
@@ -149,7 +150,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("question")
     parser.add_argument("-k", type=int, default=5)
-    parser.add_argument("--pipeline", choices=PIPELINES, default="hibrida+minilm")
+    parser.add_argument("--pipeline", choices=PIPELINES, default=DEFAULT_PIPELINE)
     parser.add_argument("--sem-metodologia", action="store_true")
     args = parser.parse_args()
 

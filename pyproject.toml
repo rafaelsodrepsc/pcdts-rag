@@ -22,6 +22,7 @@ pcdt-chunk = "pcdt_rag.chunk:main"
 pcdt-embed = "pcdt_rag.embed:main"
 pcdt-eval = "pcdt_rag.evaluate:main"
 pcdt-search = "pcdt_rag.retrieve:main"
+pcdt-web = "pcdt_rag.web:main"
 
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]
