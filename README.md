@@ -56,18 +56,18 @@ A diferença de cada pipeline para a `vetorial` é calculada pergunta a pergunta
 
 ### Resultados
 
-59 perguntas, 1 só em imagem (`em-01`). Latência em CPU, por pergunta, medida por `pcdt-eval` (`eval/results/retrieval.json`).
+59 perguntas, 1 só em imagem (`em-01`). Latência em CPU, por pergunta, medida por `pcdt-eval` (`eval/results/retrieval.json`). O `bge` pontua um par por vez, porque o export int8 dá notas que dependem do padding do lote.
 
 | Pipeline | hit@1 | hit@5 | hit@10 | mrr@10 | p50 |
 |---|---|---|---|---|---|
-| `vetorial` | 0,356 | 0,729 | 0,797 | 0,508 | 0,15 s |
+| `vetorial` | 0,356 | 0,729 | 0,814 | 0,511 | 0,13 s |
 | `bm25` | 0,373 | 0,644 | 0,763 | 0,481 | < 1 ms |
-| `hibrida` | 0,356 | 0,695 | 0,847 | 0,513 | 0,11 s |
-| `hibrida+minilm` | 0,458 | 0,780 | 0,881 | 0,593 | 8,8 s |
-| `hibrida+bge` | 0,525 | 0,864 | 0,932 | 0,682 | 44,9 s |
+| `hibrida` | 0,356 | 0,695 | 0,847 | 0,514 | 0,11 s |
+| `hibrida+minilm` | 0,458 | 0,780 | 0,881 | 0,593 | 5,6 s |
+| `hibrida+bge` | 0,576 | 0,864 | 0,915 | 0,710 | 32,2 s |
 
-Só o `hibrida+bge` melhora sobre a `vetorial` com IC95% pareado fora de zero nas quatro métricas (hit@5: +0,136, [+0,05; +0,22]). O `hibrida+minilm` só tem hit@10 no limite (+0,085, [0,00; +0,17]), e `bm25` e `hibrida` ficam dentro do ruído. Com 59 perguntas, diferenças menores que cerca de 0,1 não se distinguem.
+Só o `hibrida+bge` melhora sobre a `vetorial` com IC95% pareado fora de zero nas quatro métricas (hit@5: +0,136, [+0,03; +0,24]). O `hibrida+minilm` só tem hit@10 no limite (+0,068, [0,00; +0,15]), e `bm25` e `hibrida` ficam dentro do ruído. Com 59 perguntas, diferenças menores que cerca de 0,1 não se distinguem.
 
-O padrão da CLI é `hibrida+minilm`, o meio-termo entre qualidade e tempo. O `hibrida+bge` é o mais preciso, mas 45 s por pergunta em CPU só serve para uso em lote.
+O padrão da CLI é `hibrida+minilm`, o meio-termo entre qualidade e tempo. O `hibrida+bge` é o mais preciso, mas 32 s por pergunta em CPU só serve para uso em lote.
 
 `methodology.py` identifica os apêndices de metodologia de busca na literatura, que somam 59% das páginas do corpus. Tirá-los do índice mudou o hit@5 em +0,034 com IC95% de [0,00; 0,08] (commit `0310016`), então eles continuam indexados; `pcdt-search --sem-metodologia` ainda permite comparar.
