@@ -1,34 +1,32 @@
-"""Measure retrieval against the golden set (eval/golden.jsonl).
+"""Measure the retrieval pipelines against the golden set (eval/golden.jsonl).
 
 Each question is annotated with the pages that answer it. A retrieved chunk is relevant
 when it comes from the same document and covers one of those pages with text: a page that
 is only an image cannot be retrieved, and the evaluation counts it as a miss.
 
-Two configurations are compared: the full index, and the index without the chunks that
-lie inside the methodology appendices.
+Every pipeline runs one question at a time, as it would in use, so the latency includes
+embedding the question. Each pipeline is compared with "vetorial", the dense baseline, on
+the same questions.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
+import time
 from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
 
 from pcdt_rag.chunk import MODEL, read_pages
-from pcdt_rag.embed import Embedder
 from pcdt_rag.extract import OUT_FILE as PAGES_FILE
-from pcdt_rag.retrieve import (
-    corpus_methodology,
-    load_chunks,
-    load_index,
-    outside_methodology,
-    search,
-)
+from pcdt_rag.rerank import MODELS
+from pcdt_rag.retrieve import CANDIDATES, PIPELINES, RERANK_DEPTH, RRF_K, Retriever, load_chunks
 
 GOLDEN_FILE = Path("eval/golden.jsonl")
-OUT_FILE = Path("eval/results/baseline.json")
+OUT_FILE = Path("eval/results/retrieval.json")
+BASELINE = "vetorial"
 KS = (1, 5, 10)
 TOP = max(KS)
 RESAMPLES = 10_000
@@ -88,38 +86,55 @@ def summarize(values: dict[str, np.ndarray]) -> dict[str, dict]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Evaluate the retrieval pipelines.")
+    parser.add_argument("--pipelines", nargs="+", choices=PIPELINES, default=list(PIPELINES))
+    args = parser.parse_args()
+    pipelines = [BASELINE, *(p for p in args.pipelines if p != BASELINE)]
+
     questions = load_golden(GOLDEN_FILE)
     chunks = load_chunks()
-    docs = load_index(chunks)
     text_pages = {(p.slug, p.page) for pages in read_pages(PAGES_FILE) for p in pages if p.text}
-    configs = {
-        "completo": np.ones(len(chunks), dtype=bool),
-        "sem-metodologia": outside_methodology(chunks, corpus_methodology()),
-    }
-
-    query_vectors = Embedder().queries([q.question for q in questions])
+    retriever = Retriever(chunks)
     report: dict = {
         "model": MODEL,
+        "rerankers": {name: m.repo for name, m in MODELS.items()},
+        "candidates": CANDIDATES,
+        "rerank_depth": RERANK_DEPTH,
+        "rrf_k": RRF_K,
         "questions": len(questions),
         "unreachable": [
             q.id for q in questions if not any((q.slug, p) in text_pages for p in q.pages)
         ],
-        "configs": {},
+        "pipelines": {},
         "per_question": [{"id": q.id, "question": q.question} for q in questions],
     }
-    per_config: dict[str, dict[str, np.ndarray]] = {}
-    for name, allowed in configs.items():
-        top = search(query_vectors, docs, allowed, TOP)
-        ranks = []
-        for q, row, entry in zip(questions, top, report["per_question"], strict=True):
+    per_pipeline: dict[str, dict[str, np.ndarray]] = {}
+    for name in pipelines:
+        retriever.run(name, "aquecimento", TOP)  # loads the models outside the timing
+        ranks, latencies = [], []
+        for q, entry in zip(questions, report["per_question"], strict=True):
+            start = time.perf_counter()
+            row = retriever.run(name, q.question, TOP)
+            latencies.append(1000 * (time.perf_counter() - start))
             rank = first_hit([is_relevant(chunks[i], q, text_pages) for i in row])
             ranks.append(rank)
             entry[name] = {"rank": rank, "top5": [chunks[i]["id"] for i in row[:5]]}
-        per_config[name] = metrics(ranks)
-        report["configs"][name] = {"chunks": int(allowed.sum()), **summarize(per_config[name])}
+        per_pipeline[name] = metrics(ranks)
+        report["pipelines"][name] = {
+            **summarize(per_pipeline[name]),
+            "latency_ms": {
+                "p50": float(np.percentile(latencies, 50)),
+                "p95": float(np.percentile(latencies, 95)),
+            },
+        }
+        print(f"{name}: {np.percentile(latencies, 50):.0f} ms p50", flush=True)
 
-    a, b = per_config["sem-metodologia"], per_config["completo"]
-    report["diff"] = summarize({name: a[name] - b[name] for name in a})
+    base = per_pipeline[BASELINE]
+    report["diff"] = {
+        name: summarize({m: per_pipeline[name][m] - base[m] for m in base})
+        for name in pipelines
+        if name != BASELINE
+    }
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -127,20 +142,22 @@ def main() -> None:
 
 
 def print_report(report: dict) -> None:
-    names = list(report["configs"])
-    print(f"{report['questions']} perguntas, {len(report['unreachable'])} só em imagem\n")
-    print(f"{'':18}" + "".join(f"{n:>26}" for n in names) + f"{'diferença':>26}")
-    for metric in report["diff"]:
-        cells = [report["configs"][n][metric] for n in names] + [report["diff"][metric]]
-        row = "".join(
-            f"{c['mean']:>10.3f} [{c['ci95'][0]:+.2f}, {c['ci95'][1]:+.2f}]".rjust(26)
-            for c in cells
+    pipelines = report["pipelines"]
+    metric_names = [m for m in next(iter(pipelines.values())) if m != "latency_ms"]
+    print(f"\n{report['questions']} perguntas, {len(report['unreachable'])} só em imagem\n")
+    print(f"{'':16}" + "".join(f"{m:>9}" for m in metric_names) + f"{'p50 ms':>9}{'p95 ms':>9}")
+    for name, values in pipelines.items():
+        cells = "".join(f"{values[m]['mean']:>9.3f}" for m in metric_names)
+        latency = values["latency_ms"]
+        print(f"{name:16}{cells}{latency['p50']:>9.0f}{latency['p95']:>9.0f}")
+    print(f"\nDiferença para {BASELINE}, com IC95% pareado:\n")
+    print(f"{'':16}" + "".join(f"{m:>22}" for m in metric_names))
+    for name, values in report["diff"].items():
+        cells = "".join(
+            f"{v['mean']:+.3f} [{v['ci95'][0]:+.2f}, {v['ci95'][1]:+.2f}]".rjust(22)
+            for v in (values[m] for m in metric_names)
         )
-        print(f"{metric:18}{row}")
-    misses = [q for q in report["per_question"] if q["completo"]["rank"] is None]
-    print(f"\nFora do top {TOP} no índice completo ({len(misses)}):")
-    for q in misses:
-        print(f"  {q['id']:6} {q['question']}")
+        print(f"{name:16}{cells}")
     print(f"\nOutput: {OUT_FILE}")
 
 
