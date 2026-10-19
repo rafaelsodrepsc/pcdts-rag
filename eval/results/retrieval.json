@@ -28,22 +28,22 @@
     ]
    },
    "hit@10": {
-    "mean": 0.7966101694915254,
+    "mean": 0.8135593220338984,
     "ci95": [
-     0.6949152542372882,
-     0.8983050847457628
+     0.711864406779661,
+     0.9152542372881356
     ]
    },
    "mrr@10": {
-    "mean": 0.5082324455205811,
+    "mean": 0.5106537530266343,
     "ci95": [
-     0.40782788539144466,
-     0.6093654156577885
+     0.41093220338983044,
+     0.6114618644067797
     ]
    },
    "latency_ms": {
-    "p50": 153.16985099343583,
-    "p95": 241.95204279094446
+    "p50": 127.55501399806235,
+    "p95": 208.93060299786126
    }
   },
   "bm25": {
@@ -76,8 +76,8 @@
     ]
    },
    "latency_ms": {
-    "p50": 0.2832540194503963,
-    "p95": 0.4871318087680265
+    "p50": 1.004489000479225,
+    "p95": 1.8610249062476165
    }
   },
   "hibrida": {
@@ -103,15 +103,15 @@
     ]
    },
    "mrr@10": {
-    "mean": 0.5134382566585957,
+    "mean": 0.5136265805757331,
     "ci95": [
-     0.41304025423728813,
-     0.6134192561205274
+     0.41341690207156306,
+     0.6135603309120259
     ]
    },
    "latency_ms": {
-    "p50": 113.83171900524758,
-    "p95": 262.2507423046045
+    "p50": 113.39467999641784,
+    "p95": 203.7991536002664
    }
   },
   "hibrida+minilm": {
@@ -144,16 +144,16 @@
     ]
    },
    "latency_ms": {
-    "p50": 8808.716906001791,
-    "p95": 15493.082595602024
+    "p50": 5624.816055998963,
+    "p95": 6336.072626305395
    }
   },
   "hibrida+bge": {
    "hit@1": {
-    "mean": 0.5254237288135594,
+    "mean": 0.576271186440678,
     "ci95": [
-     0.3898305084745763,
-     0.6440677966101694
+     0.4406779661016949,
+     0.6949152542372882
     ]
    },
    "hit@5": {
@@ -164,22 +164,22 @@
     ]
    },
    "hit@10": {
-    "mean": 0.9322033898305084,
+    "mean": 0.9152542372881356,
     "ci95": [
-     0.864406779661017,
+     0.8305084745762712,
      0.9830508474576272
     ]
    },
    "mrr@10": {
-    "mean": 0.6824320688727468,
+    "mean": 0.7103107344632767,
     "ci95": [
-     0.5893186709712134,
-     0.7722639225181599
+     0.6155331920903955,
+     0.8019774011299434
     ]
    },
    "latency_ms": {
-    "p50": 44899.186560011,
-    "p95": 60329.01288350112
+    "p50": 32179.891077998036,
+    "p95": 37914.385151101305
    }
   }
  },
@@ -228,13 +228,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 9,
+    "rank": null,
     "top5": [
      "artrite-psoriasica:19",
      "espondilite-ancilosante:46",
      "espondilite-ancilosante:39",
      "espondilite-ancilosante:45",
-     "epilepsia:52"
+     "espondilite-ancilosante:44"
     ]
    }
   },
@@ -285,10 +285,10 @@
     "rank": 1,
     "top5": [
      "espondilite-ancilosante:21",
-     "artrite-reumatoide:74",
-     "psoriase:57",
+     "espondilite-ancilosante:43",
      "espondilite-ancilosante:14",
-     "espondilite-ancilosante:16"
+     "espondilite-ancilosante:16",
+     "artrite-reumatoide:74"
     ]
    }
   },
@@ -340,8 +340,8 @@
     "top5": [
      "espondilite-ancilosante:6",
      "espondilite-ancilosante:38",
-     "espondilite-ancilosante:3",
      "espondilite-ancilosante:45",
+     "espondilite-ancilosante:3",
      "artrite-psoriasica:45"
     ]
    }
@@ -396,7 +396,7 @@
      "espondilite-ancilosante:12",
      "artrite-reumatoide:66",
      "espondilite-ancilosante:46",
-     "espondilite-ancilosante:43"
+     "espondilite-ancilosante:44"
     ]
    }
   },
@@ -448,8 +448,8 @@
     "top5": [
      "esclerose-multipla:79",
      "esclerose-multipla:81",
-     "esclerose-multipla:31",
      "esclerose-multipla:27",
+     "esclerose-multipla:31",
      "esclerose-multipla:33"
     ]
    }
@@ -501,8 +501,8 @@
     "rank": null,
     "top5": [
      "esclerose-multipla:80",
-     "esclerose-multipla:79",
      "esclerose-multipla:42",
+     "esclerose-multipla:79",
      "esclerose-multipla:81",
      "esclerose-multipla:41"
     ]
@@ -557,8 +557,8 @@
      "esclerose-multipla:41",
      "esclerose-multipla:115",
      "esclerose-multipla:85",
-     "esclerose-multipla:114",
-     "esclerose-multipla:36"
+     "esclerose-multipla:36",
+     "esclerose-multipla:114"
     ]
    }
   },
@@ -768,13 +768,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 3,
+    "rank": 2,
     "top5": [
      "dpoc:28",
-     "dpoc:33",
      "asma:70",
+     "dpoc:33",
      "asma:51",
-     "asma:58"
+     "asma:60"
     ]
    }
   },
@@ -824,8 +824,8 @@
    "hibrida+bge": {
     "rank": 3,
     "top5": [
-     "asma:52",
      "asma:66",
+     "asma:52",
      "asma:35",
      "asma:67",
      "asma:87"
@@ -880,9 +880,9 @@
     "top5": [
      "dpoc:3",
      "dpoc:6",
-     "dpoc:4",
-     "dpoc:2",
-     "asma:18"
+     "asma:18",
+     "dpoc:5",
+     "dpoc:4"
     ]
    }
   },
@@ -933,8 +933,8 @@
     "rank": 1,
     "top5": [
      "dpoc:22",
-     "dpoc:23",
      "dpoc:29",
+     "dpoc:23",
      "dpoc:11",
      "dpoc:28"
     ]
@@ -989,8 +989,8 @@
      "dpoc:75",
      "dpoc:78",
      "dpoc:19",
-     "dpoc:57",
-     "dpoc:79"
+     "dpoc:79",
+     "dpoc:57"
     ]
    }
   },
@@ -1038,10 +1038,10 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 2,
+    "rank": 1,
     "top5": [
-     "asma:35",
      "dpoc:11",
+     "asma:35",
      "dpoc:13",
      "dpoc:3",
      "dpoc:54"
@@ -1206,7 +1206,7 @@
      "doenca-de-parkinson:31",
      "doenca-de-parkinson:24",
      "doenca-de-parkinson:17",
-     "doenca-de-parkinson:80"
+     "doenca-de-parkinson:50"
     ]
    }
   },
@@ -1527,10 +1527,10 @@
     "rank": 2,
     "top5": [
      "epilepsia:50",
-     "dor-cronica:43",
      "dor-cronica:44",
-     "dor-cronica:52",
-     "dor-cronica:36"
+     "dor-cronica:43",
+     "dor-cronica:36",
+     "dor-cronica:52"
     ]
    }
   },
@@ -1538,7 +1538,7 @@
    "id": "dc-02",
    "question": "O SUS fornece pregabalina para fibromialgia?",
    "vetorial": {
-    "rank": null,
+    "rank": 7,
     "top5": [
      "dor-cronica:191",
      "dor-cronica:193",
@@ -1558,7 +1558,7 @@
     ]
    },
    "hibrida": {
-    "rank": 10,
+    "rank": 9,
     "top5": [
      "dor-cronica:191",
      "dor-cronica:193",
@@ -1578,13 +1578,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 2,
+    "rank": 1,
     "top5": [
      "dor-cronica:37",
      "dor-cronica:33",
      "dor-cronica:74",
-     "dor-cronica:181",
-     "dor-cronica:338"
+     "dor-cronica:338",
+     "dor-cronica:181"
     ]
    }
   },
@@ -1635,8 +1635,8 @@
     "rank": 1,
     "top5": [
      "dor-cronica:42",
-     "epilepsia:52",
      "dor-cronica:34",
+     "epilepsia:52",
      "epilepsia:50",
      "epilepsia:49"
     ]
@@ -1691,7 +1691,7 @@
      "dor-cronica:45",
      "dor-cronica:301",
      "dor-cronica:44",
-     "dor-cronica:297",
+     "dor-cronica:300",
      "dor-cronica:316"
     ]
    }
@@ -1854,7 +1854,7 @@
      "artrite-reumatoide:57",
      "artrite-reumatoide:60",
      "artrite-reumatoide:56",
-     "artrite-reumatoide:75"
+     "artrite-reumatoide:77"
     ]
    }
   },
@@ -1961,8 +1961,8 @@
      "artrite-psoriasica:6",
      "artrite-psoriasica:7",
      "artrite-reumatoide:6",
-     "artrite-psoriasica:46",
-     "artrite-psoriasica:4"
+     "psoriase:8",
+     "artrite-psoriasica:46"
     ]
    }
   },
@@ -2064,13 +2064,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 7,
+    "rank": 6,
     "top5": [
      "artrite-psoriasica:54",
      "artrite-psoriasica:47",
      "artrite-psoriasica:68",
-     "artrite-psoriasica:49",
-     "artrite-psoriasica:50"
+     "artrite-psoriasica:50",
+     "artrite-psoriasica:49"
     ]
    }
   },
@@ -2118,13 +2118,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 7,
+    "rank": 8,
     "top5": [
      "psoriase:9",
      "psoriase:129",
-     "psoriase:8",
+     "psoriase:126",
      "psoriase:10",
-     "psoriase:97"
+     "psoriase:8"
     ]
    }
   },
@@ -2174,11 +2174,11 @@
    "hibrida+bge": {
     "rank": 1,
     "top5": [
-     "psoriase:45",
      "psoriase:40",
+     "psoriase:45",
      "artrite-reumatoide:113",
      "psoriase:53",
-     "psoriase:41"
+     "psoriase:44"
     ]
    }
   },
@@ -2226,13 +2226,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 5,
+    "rank": 6,
     "top5": [
      "psoriase:51",
      "psoriase:37",
      "psoriase:36",
      "psoriase:26",
-     "psoriase:40"
+     "psoriase:16"
     ]
    }
   },
@@ -2442,11 +2442,11 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 2,
+    "rank": 1,
     "top5": [
-     "diabete-melito-1:8",
      "diabete-melito-1:33",
      "diabete-melito-1:9",
+     "diabete-melito-1:8",
      "diabete-melito-2:40",
      "diabete-melito-1:76"
     ]
@@ -2496,13 +2496,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 3,
+    "rank": 4,
     "top5": [
      "diabete-melito-2:102",
      "diabete-melito-1:24",
-     "diabete-melito-1:49",
      "diabete-melito-1:48",
-     "diabete-melito-2:107"
+     "diabete-melito-1:49",
+     "diabete-melito-2:103"
     ]
    }
   },
@@ -2553,10 +2553,10 @@
     "rank": 1,
     "top5": [
      "diabete-melito-1:12",
-     "diabete-melito-1:45",
-     "diabete-melito-1:69",
+     "diabete-melito-1:6",
      "diabete-melito-1:3",
-     "diabete-melito-1:6"
+     "diabete-melito-1:45",
+     "diabete-melito-1:69"
     ]
    }
   },
@@ -2663,8 +2663,8 @@
      "diabete-melito-2:68",
      "diabete-melito-2:35",
      "diabete-melito-2:34",
-     "diabete-melito-2:101",
-     "diabete-melito-2:51"
+     "diabete-melito-2:51",
+     "diabete-melito-2:101"
     ]
    }
   },
@@ -2714,11 +2714,11 @@
    "hibrida+bge": {
     "rank": 1,
     "top5": [
-     "diabete-melito-2:11",
      "diabete-melito-2:10",
+     "diabete-melito-2:11",
      "diabete-melito-2:8",
-     "diabete-melito-2:6",
-     "diabete-melito-2:9"
+     "diabete-melito-2:9",
+     "diabete-melito-2:6"
     ]
    }
   },
@@ -2766,11 +2766,11 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 3,
+    "rank": 2,
     "top5": [
      "diabete-melito-2:37",
-     "diabete-melito-2:120",
      "diabete-melito-2:119",
+     "diabete-melito-2:120",
      "diabete-melito-2:99",
      "diabete-melito-2:72"
     ]
@@ -2825,8 +2825,8 @@
      "dislipidemia:21",
      "dislipidemia:22",
      "psoriase:52",
-     "artrite-reumatoide:108",
-     "artrite-reumatoide:113"
+     "artrite-reumatoide:113",
+     "artrite-reumatoide:108"
     ]
    }
   },
@@ -2877,8 +2877,8 @@
     "rank": 1,
     "top5": [
      "dislipidemia:7",
-     "dislipidemia:15",
      "psoriase:45",
+     "dislipidemia:15",
      "dislipidemia:22",
      "dislipidemia:21"
     ]
@@ -2934,7 +2934,7 @@
      "diabete-melito-1:48",
      "dor-cronica:84",
      "diabete-melito-1:13",
-     "psoriase:46"
+     "psoriase:13"
     ]
    }
   },
@@ -2988,7 +2988,7 @@
      "dislipidemia:20",
      "dislipidemia:21",
      "dislipidemia:41",
-     "dislipidemia:42"
+     "asma:64"
     ]
    }
   },
@@ -3095,8 +3095,8 @@
      "epilepsia:10",
      "epilepsia:11",
      "epilepsia:83",
-     "epilepsia:33",
-     "epilepsia:9"
+     "epilepsia:9",
+     "epilepsia:33"
     ]
    }
   },
@@ -3149,7 +3149,7 @@
      "epilepsia:56",
      "epilepsia:55",
      "epilepsia:95",
-     "epilepsia:17",
+     "epilepsia:90",
      "epilepsia:36"
     ]
    }
@@ -3203,8 +3203,8 @@
      "epilepsia:34",
      "epilepsia:9",
      "epilepsia:10",
-     "epilepsia:11",
-     "epilepsia:26"
+     "epilepsia:26",
+     "epilepsia:88"
     ]
    }
   },
@@ -3258,7 +3258,7 @@
      "tdah:107",
      "tdah:101",
      "tdah:32",
-     "tdah:153"
+     "tdah:160"
     ]
    }
   },
@@ -3306,13 +3306,13 @@
     ]
    },
    "hibrida+bge": {
-    "rank": 6,
+    "rank": 5,
     "top5": [
      "tdah:20",
      "tdah:16",
-     "tdah:161",
      "tdah:9",
-     "tdah:11"
+     "tdah:161",
+     "tdah:6"
     ]
    }
   },
@@ -3365,8 +3365,8 @@
      "tdah:14",
      "tdah:13",
      "tdah:12",
-     "tdah:160",
-     "tdah:158"
+     "tdah:168",
+     "tdah:160"
     ]
    }
   }
@@ -3388,17 +3388,17 @@
     ]
    },
    "hit@10": {
-    "mean": -0.03389830508474576,
+    "mean": -0.05084745762711865,
     "ci95": [
-     -0.1694915254237288,
-     0.1016949152542373
+     -0.1864406779661017,
+     0.0847457627118644
     ]
    },
    "mrr@10": {
-    "mean": -0.027212806026365347,
+    "mean": -0.029634113532418613,
     "ci95": [
-     -0.1338586225450632,
-     0.08194948883508203
+     -0.13689854048964217,
+     0.0790627522195318
     ]
    }
   },
@@ -3418,17 +3418,17 @@
     ]
    },
    "hit@10": {
-    "mean": 0.05084745762711865,
+    "mean": 0.03389830508474576,
     "ci95": [
-     -0.03389830508474576,
-     0.13559322033898305
+     -0.05084745762711865,
+     0.11864406779661017
     ]
    },
    "mrr@10": {
-    "mean": 0.0052058111380145315,
+    "mean": 0.0029728275490987365,
     "ci95": [
-     -0.06431312214151197,
-     0.07344178773204194
+     -0.0662032553134248,
+     0.07079011972020446
     ]
    }
   },
@@ -3448,47 +3448,47 @@
     ]
    },
    "hit@10": {
-    "mean": 0.0847457627118644,
+    "mean": 0.06779661016949153,
     "ci95": [
      0.0,
-     0.1694915254237288
+     0.15254237288135594
     ]
    },
    "mrr@10": {
-    "mean": 0.08462469733656174,
+    "mean": 0.08220338983050847,
     "ci95": [
-     -0.007991323648103317,
-     0.17728006456820014
+     -0.01041263115415658,
+     0.17441787732041963
     ]
    }
   },
   "hibrida+bge": {
    "hit@1": {
-    "mean": 0.1694915254237288,
+    "mean": 0.22033898305084745,
     "ci95": [
-     0.01694915254237288,
-     0.3220338983050847
+     0.06779661016949153,
+     0.3728813559322034
     ]
    },
    "hit@5": {
-    "mean": 0.13559322033898305,
-    "ci95": [
-     0.05084745762711865,
-     0.22033898305084745
-    ]
-   },
-   "hit@10": {
     "mean": 0.13559322033898305,
     "ci95": [
      0.03389830508474576,
      0.23728813559322035
     ]
    },
-   "mrr@10": {
-    "mean": 0.17419962335216568,
+   "hit@10": {
+    "mean": 0.1016949152542373,
     "ci95": [
-     0.08111279257465698,
-     0.2717537664783427
+     0.01694915254237288,
+     0.2033898305084746
+    ]
+   },
+   "mrr@10": {
+    "mean": 0.19965698143664243,
+    "ci95": [
+     0.10221902744148509,
+     0.30222205407586766
     ]
    }
   }

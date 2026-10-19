@@ -12,20 +12,22 @@ from dataclasses import dataclass
 import numpy as np
 
 MAX_TOKENS = 512
-BATCH = 8
 
 
 @dataclass(frozen=True)
 class Model:
     repo: str
     file: str
+    # The int8 export quantizes activations per batch, so a pair's score depends on the
+    # padding of the others in its batch. One pair per run keeps the scores comparable.
+    batch: int = 8
 
 
 MODELS = {
     # 118M parameters, distilled from mMARCO (MS MARCO translated into 14 languages).
     "minilm": Model("cross-encoder/mmarco-mMiniLMv2-L12-H384-v1", "onnx/model.onnx"),
     # 568M parameters. The fp32 export needs 2.2 GB of RAM, so this uses the int8 one.
-    "bge": Model("onnx-community/bge-reranker-v2-m3-ONNX", "onnx/model_int8.onnx"),
+    "bge": Model("onnx-community/bge-reranker-v2-m3-ONNX", "onnx/model_int8.onnx", batch=1),
 }
 
 
@@ -36,6 +38,7 @@ class CrossEncoder:
         from tokenizers import Tokenizer
 
         model = MODELS[name]
+        self.batch = model.batch
         self.tokenizer = Tokenizer.from_pretrained(model.repo)
         # Chunks have 500 tokens, so with the question and 4 special tokens most pairs pass
         # 512 and lose the last few tokens of the chunk (about 13). The 50-token overlap puts
@@ -48,8 +51,8 @@ class CrossEncoder:
 
     def scores(self, query: str, passages: list[str]) -> np.ndarray:
         out = []
-        for i in range(0, len(passages), BATCH):
-            pairs = [(query, p) for p in passages[i : i + BATCH]]
+        for i in range(0, len(passages), self.batch):
+            pairs = [(query, p) for p in passages[i : i + self.batch]]
             encodings = self.tokenizer.encode_batch(pairs)
             ids = np.array([e.ids for e in encodings], dtype=np.int64)
             feed = {
